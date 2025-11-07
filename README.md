@@ -1,6 +1,6 @@
 # Azure Service Bus Peek Tool
 
-A small Python CLI to peek (non-destructive read) messages from an Azure Service Bus queue and its Dead-Letter Queue (DLQ) using a SAS connection string.
+A small Python CLI to peek (non-destructive read) messages from an Azure Service Bus queue and its Dead-Letter Queue (DLQ) using a SAS connection string. I've stuck separate python scripts into a popular LLM and told it combine them.
 
 ## Features
 
