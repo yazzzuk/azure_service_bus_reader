@@ -26,7 +26,7 @@ pip install -r requirements.txt
 ## Usage
 
 ```
-python azure_sb_peek.py "<connection-string>" [--max N] [--queue NAME] [--active-only | --dlq-only]
+python3 azure_sb_peek.py "<connection-string>" [--max N] [--queue NAME] [--active-only | --dlq-only]
 ```
 
 ## Examples
@@ -34,24 +34,24 @@ python azure_sb_peek.py "<connection-string>" [--max N] [--queue NAME] [--active
 ### 1) Connection string with EntityPath
 
 ```
-python azure_sb_peek.py "Endpoint=sb://mybus.servicebus.windows.net/;SharedAccessKeyName=read;SharedAccessKey=ABC...=;EntityPath=my-queue" --max 20
+python3 azure_sb_peek.py "Endpoint=sb://mybus.servicebus.windows.net/;SharedAccessKeyName=read;SharedAccessKey=ABC...=;EntityPath=my-queue" --max 20
 ```
 
 ### 2) Connection string without EntityPath
 ```
-python azure_sb_peek.py "Endpoint=sb://mybus.servicebus.windows.net/;SharedAccessKeyName=read;SharedAccessKey=ABC...=" --queue my-queue
+python3 azure_sb_peek.py "Endpoint=sb://mybus.servicebus.windows.net/;SharedAccessKeyName=read;SharedAccessKey=ABC...=" --queue my-queue
 ```
 
 ### 3) DLQ only
 
 ```
-python azure_sb_peek.py "$(cat conn.txt)" --dlq-only --max 100
+python3 azure_sb_peek.py "$(cat conn.txt)" --dlq-only --max 100
 ```
 
 ### 4) Active only
 
 ```
-python azure_sb_peek.py "$(cat conn.txt)" --active-only
+python3 azure_sb_peek.py "$(cat conn.txt)" --active-only
 ```
 
 
