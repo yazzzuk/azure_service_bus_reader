@@ -20,7 +20,7 @@ python3 -m venv .venv
 . .venv/bin/activate  # Windows: .venv\Scripts\activate
 
 # install dependency
-pip install azure-servicebus==7.12.3
+pip install -r requirements.txt
 ```
 
 ## Usage
